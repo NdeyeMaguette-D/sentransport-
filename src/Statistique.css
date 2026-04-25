@@ -1,21 +1,22 @@
 .statistique {
-  display: inline-block;
-  background-color: #0a6e31;
-  color: white;
-  padding: 20px 30px;
-  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
   border-radius: 8px;
-  text-align: center;
+  padding: 16px 24px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-top: 4px solid #0a6e31;
 }
 
-.stat-nombre {
-  display: block;
-  font-size: 2.5rem;
+.statistique-chiffre {
+  font-size: 2rem;
   font-weight: bold;
+  color: #0a6e31;
 }
 
-.stat-label {
-  display: block;
-  font-size: 1rem;
-  opacity: 0.9;
+.statistique-libelle {
+  font-size: 0.9rem;
+  color: #7f8c8d;
+  margin-top: 4px;
 }
