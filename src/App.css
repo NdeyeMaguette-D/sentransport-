@@ -15,18 +15,8 @@
   flex: 1;
 }
 
-.stats-container {
-  display: flex;
-  gap: 16px;
-  margin-top: 24px;
-  flex-wrap: wrap;
-}
-
 @media (max-width: 600px) {
   .contenu {
     padding: 12px;
-  }
-  .stats-container {
-    flex-direction: column;
   }
 }
