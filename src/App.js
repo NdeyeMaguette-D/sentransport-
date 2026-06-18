@@ -6,6 +6,8 @@ import LigneBus from './LigneBus';
 import DetailLigne from './DetailLigne';
 import Footer from './Footer';
 import Carte from './Carte';
+import Meteo from './Meteo';
+import SignalerIncident from './SignalerIncident';
 
 function App() {
   // Les trois états
@@ -82,6 +84,7 @@ if (erreur) {
     <div className="App">
       <Header />
       <main className="contenu">
+        <Meteo />
         <Recherche valeur={recherche} onChange={setRecherche} />
         <p className="resultat-recherche">
           {lignesFiltrees.length} ligne{lignesFiltrees.length > 1 ? 's' : ''} trouvee{lignesFiltrees.length > 1 ? 's' : ''}
@@ -99,6 +102,7 @@ if (erreur) {
         ))}
         {ligneSelectionnee && <DetailLigne ligne={ligneSelectionnee} />}
         <Carte /> 
+        <SignalerIncident /> 
       </main>
       <Footer />
     </div>
